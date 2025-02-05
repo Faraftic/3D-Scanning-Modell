@@ -1,6 +1,7 @@
 **Dokumentation 3D-Scanning-Modell**
 
 *Frontend:*
+-
 Youtube Tutorial zu Three.js angeschaut
 Youtube Turorial nachgemacht.
 Elemente des Codes besser verstehen.
@@ -16,3 +17,18 @@ Creating new tasks in github plan.
 
 
 *Backend:*
+- 
+- Tutorial angeschaut
+- Bilder eingefügt
+- Fehler, da neutraler Hintergrund
+- Neue Bilder erstellt und Hinzugefügt
+- Punktewolke erstellt
+- Fehler bei DepthMap (Grafikkarte nicht kompatibel)
+- Heutiges Endergebnis:
+    - Eine .mg Datei
+![Mg Datei](/Backend/Bilder/mesh.png)
+- Hintergrund ist entscheidend
+    - Guter Hintergrund
+![Mg Datei](/Backend/Bilder/Rekonstruiert.png)
+    - Schlechter Hintergrund
+![Mg Datei](/Backend/Bilder/Nicht%20rekonstruiert.png)
