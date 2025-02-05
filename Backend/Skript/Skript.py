@@ -4,6 +4,7 @@ import os
 # Setze die Pfade zu Meshroom, Blender und den Ordnern
 meshroom_path = r"C:\Users\Melon\OneDrive\Dokumente\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\Meshroom.exe"  # Passe den Pfad an
 blender_path = r"C:\Users\Melon\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Blender\Blender 4.3.lnk"  # Passe den Pfad an
+#C:/Program Files/Blender Foundation/Blender 3.2/blender.exe - Pfad zum probieren
 input_images = r"C:\Users\Melon\OneDrive\Bilder\3D-Modell-Input"
 output_folder = r"C:\Users\Melon\OneDrive\Bilder\3D-Modell-Output"
 obj_file = os.path.join(output_folder, "texturedMesh.obj")
@@ -23,7 +24,7 @@ print("Meshroom abgeschlossen.")
 # Prüfen, ob die .obj-Datei existiert
 if os.path.exists(obj_file):
     print(f"{obj_file} erfolgreich generiert.")
-    
+
     # Blender-Skript für den Import und Export
     blender_script = f"""
 import bpy
