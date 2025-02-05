@@ -1,6 +1,6 @@
 **Dokumentation 3D-Scanning-Modell**
 
-Frontend:
+*Frontend:*
 Youtube Tutorial zu Three.js angeschaut
 Youtube Turorial nachgemacht.
 Elemente des Codes besser verstehen.
@@ -13,4 +13,4 @@ Dokumentation zu github hinzufügen.
 
 
 
-Backend:
+*Backend:*
