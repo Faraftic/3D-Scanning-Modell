@@ -9,6 +9,8 @@ Möglichkeit zur späteren Automatisierung überlegt.
 Kleiner test mit der Texture mit Thiviyan als Bild.
 Projekt auf github laden da es davor nur Lokal bei Nils war.
 Dokumentation zu github hinzufügen.
+Creating new tasks in github plan.
+
 
 
 
