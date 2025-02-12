@@ -35,3 +35,11 @@
 ![Mg Datei](/Backend/Bilder/Rekonstruiert.png)
     - Schlechter Hintergrund
 ![Mg Datei](/Backend/Bilder/Nicht%20rekonstruiert.png)
+
+12.02.2025
+-
+- Keine Alternative gefunden
+- .mg Datei ist nicht nutzbar
+- Einzige bekannte Möglichkeit CUDA Grafikkarte
+- Verschiedene Software getestet (Erfolgslos)
+- Wir sind verzweifelt
