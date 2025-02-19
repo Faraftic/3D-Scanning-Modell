@@ -1,8 +1,5 @@
-//Import the THREE.js library
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
-// To allow for the camera to move around the scene
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
-// To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
 //Create a Three.JS Scene
@@ -21,7 +18,6 @@ let object;
 let controls;
 
 let objToRender = 'model';
-
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
@@ -63,7 +59,6 @@ scene.add(topLight);
 const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "dino" ? 5 : 1);
 scene.add(ambientLight);
 
-
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 if (objToRender === "model") {
   controls = new OrbitControls(camera, renderer.domElement);
@@ -82,8 +77,6 @@ window.addEventListener("resize", function () {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
-
 
 //Start the 3D rendering
 animate();

@@ -1,15 +1,13 @@
-<!--
-  EYE FREE MODEL 3D BY Oscar creativo by OSCAR CREATIVO is licensed under Creative Commons Attribution.
-  Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
--->
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>3D Modell</title>
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
       <h1>3D Modell - Kai Ruben Nils Diego Thivi</h1>
       <div class="button">
@@ -20,9 +18,13 @@
     </header>
 
     <main>
-      <div id="container3D"></div>
+        <div id="container3D"></div>
     </main>
-
+    <form id="uploadForm" action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="file">
+        <button type="submit" id="uploadButton">Upload</button>
+    </form>
+    <p id="status"></p>
     <script type="module" src="js/main.js"></script>
 
   </body>
