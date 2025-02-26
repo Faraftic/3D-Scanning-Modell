@@ -3,11 +3,15 @@ import os
 import sys
 
 # Blender-Executable (ggf. anpassen)
-blender_exe = r"C:/Program Files/Blender Foundation/Blender 4.3/blender.exe"
 
+# blender_exe = r"C:/Program Files/Blender Foundation/Blender 4.3/blender.exe"
+blender_exe = r"C:/Program Files/Blender Foundation/Blender 3.6/blender.exe"
 # Pfade zur OBJ-Datei und zum Zielordner
-obj_datei = r"C:/Users/kaiim/Downloads/mesh 1.obj"
-ziel_ordner = r"C:/Users/kaiim/Downloads"
+
+# obj_datei = r"C:/Users/kaiim/Downloads/mesh 1.obj"
+# ziel_ordner = r"C:/Users/kaiim/Downloads"
+obj_datei = r"C:/Users/bfo/Downloads/mesh 1.obj"
+ziel_ordner = r"C:/Users/bfo/Downloads"
 
 # Temporäres Blender-Skript
 blender_script = os.path.join(os.path.dirname(__file__), "blender_script.py")
