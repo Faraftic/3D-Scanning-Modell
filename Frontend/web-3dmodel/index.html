@@ -3,30 +3,24 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>3D Modell</title>
+    <title>A simple Three.JS App</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header>
-      <h1>3D Modell - Kai Ruben Nils Diego Thivi</h1>
-      <div class="button">
-        <input type="file" id="fileInput">
-        <button><img src="css/img/upload.png" alt="" class="buttonImg">Upload</button>
-        <p id="status"></p>
-      </div>
+        <h1>A simple three.js app</h1>
     </header>
-
     <main>
         <div id="container3D"></div>
     </main>
     <form id="uploadForm" action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
-        <input type="file" id="fileInput" name="file">
+        <input type="file" id="fileInput" name="files" multiple>
+        <button type="button" id="selectButton">Dateien Auswählen</button>
         <button type="submit" id="uploadButton">Upload</button>
     </form>
     <p id="status"></p>
     <script type="module" src="js/main.js"></script>
+</body>
 
-  </body>
-  
 </html>

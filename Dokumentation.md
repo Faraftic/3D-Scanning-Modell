@@ -13,6 +13,9 @@
 - Creating new tasks in github plan.
 - Schauen ob man mit Blender .mg dateien konvertieren kann.
 - Upload Button auf Webseite erstellen.
+- Python Server Idee suchen
+- Python Server Erstellen
+- Upload Button funktionstüchtig machen
 
 
 
