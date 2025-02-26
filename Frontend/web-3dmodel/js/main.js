@@ -80,3 +80,27 @@ window.addEventListener("resize", function () {
 
 //Start the 3D rendering
 animate();
+
+// Add event listener to the select button to trigger file input click
+document.getElementById('selectButton').addEventListener('click', function() {
+    document.getElementById('fileInput').click();
+});
+
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(this);
+
+    fetch('http://localhost:5000/upload', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('status').innerText = data.message;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('status').innerText = 'Upload failed!';
+    });
+});
