@@ -1,3 +1,13 @@
+
+
+
+
+# NICHT BENUTZT WORDEN!!!!!!!!!!!!!!
+
+
+
+
+
 # filepath: /c:/Users/nilsc/OneDrive - Ecoles - Schulen Valais-Wallis/Arbeit/EMVs/EMVs Unterricht/EMVs1/3D-Modell-Scanning/3D-Scanning-Modell/Backend/app.py
 from flask import Flask, request, jsonify
 import os
