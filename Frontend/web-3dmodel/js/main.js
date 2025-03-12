@@ -81,26 +81,31 @@ window.addEventListener("resize", function () {
 //Start the 3D rendering
 animate();
 
-// Add event listener to the select button to trigger file input click
-document.getElementById('selectButton').addEventListener('click', function() {
-    document.getElementById('fileInput').click();
-});
+document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+  event.preventDefault(); // Verhindert das Neuladen der Seite
 
-document.getElementById('uploadForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+  let formData = new FormData();
+  let files = document.getElementById("fileInput").files;
+  
+  if (files.length === 0) {
+      alert("Bitte wähle mindestens eine Datei aus.");
+      return;
+  }
 
-    const formData = new FormData(this);
+  for (let file of files) {
+      formData.append("files", file);
+  }
 
-    fetch('http://localhost:5000/upload', {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('status').innerText = data.message;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('status').innerText = 'Upload failed!';
-    });
+  try {
+      let response = await fetch("http://127.0.0.1:5000/upload", {
+          method: "POST",
+          body: formData
+      });
+
+      let result = await response.json();
+      document.getElementById('status').innerText = result.message;
+  } catch (error) {
+      console.error("Fehler beim Hochladen:", error);
+      document.getElementById('status').innerText = "Upload fehlgeschlagen!";
+  }
 });
