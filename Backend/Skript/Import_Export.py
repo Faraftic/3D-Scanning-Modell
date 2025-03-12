@@ -11,7 +11,7 @@ blender_exe = r"C:/Program Files/Blender Foundation/Blender 3.6/blender.exe"
 # obj_datei = r"C:/Users/kaiim/Downloads/mesh 1.obj"
 # ziel_ordner = r"C:/Users/kaiim/Downloads"
 obj_datei = r"C:/Users/bfo/Downloads/mesh 1.obj"
-ziel_ordner = r"C:/Users/bfo/Downloads"
+ziel_ordner = r"C:/Users/bfo/Downloads/3D-Scanning-Modell-main (1)/3D-Scanning-Modell-main/Frontend/web-3dmodel/models/model"
 
 # Temporäres Blender-Skript
 blender_script = os.path.join(os.path.dirname(__file__), "blender_script.py")
@@ -81,3 +81,6 @@ except subprocess.CalledProcessError as e:
 
 # Temporäre Datei entfernen
 os.remove(blender_script)
+
+# Pfad zum Modell
+# 
